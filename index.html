@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>• Pixel Art Maker by Negmah •</title>
+
+    <!-- GoogleFonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="newstyles.css">
+
+    <!-- jQuery 3.3.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="grid">
+        <div class="w3-row">
+            <div class="col-1">
+                <h1>Lab: Pixel Art Maker</h1>
+            </div>
+        </div>
+        <div id="container">
+            <div class="w3-row">
+                <div class="col-2">
+                    <h2 id="gridSize">Choose Grid Size</h2>
+                </div>
+            </div>
+            <div class="w3-row">
+                <div class="col-3">
+                    <form id="sizePicker">
+                        <p>Grid Height</p>
+                        <input type="number" id="inputHeight" name="height" placeholder="40 Max" min="1" max="40" value="">
+                        <p>Grid Width</p>
+                        <input type="number" id="inputWidth" name="width" placeholder="40 Max" min="1" max="40" value="">
+                        <br>
+                        <input type="submit" id="buttonSubmit" value="Make magic happen ♥">
+                        <br><br>
+                        <button id="buttonReset" class="glass">Start over</button>
+                    </form>
+                    <br><br>
+                    <div class="border">
+                    </div>
+                </div>
+            </div>
+            <div class="w3-row">
+                <div class="col-2">
+                    <h2>Pick A Color</h2>
+                </div>
+            </div>
+            <div class="w3-row">
+                <div class="col-2">
+                    <input type="color" id="colorPicker" value="#80ff00">
+                </div>
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="col-4">
+                <h2>Design Canvas</h2>
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="col-4">
+                <!-- Grid container -->
+                <table id="pixelCanvas">
+                </table>
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="col-5">
+                <footer>
+                    "Nothing is impossible. The word itself says 'I'm possible'!" - Audrey Hepburn
+                    <br><br>
+                    Web Development by @Monica Moura
+                    <br>
+                    Contact information: <a href="mailto:monica.a.moura@hotmail.com">monica.a.moura@hotmail.com</a> | FACEBOOK: <a href="https://www.facebook.com/monica.moura.1981" target="_blank">Monica Moure</a> | LINKEDIN: <a href="https://www.linkedin.com/in/monica-moura-39024046/" target="_blank">Monica Moura</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="designs.js"></script>
+
+</body>
+
+</html>
